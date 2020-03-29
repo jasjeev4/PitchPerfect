@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfecred" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfecred" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,6 @@
                                 <state key="normal" title="Button" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQO-96-Kox"/>
-                                    <segue destination="ToD-CQ-02c" kind="show" id="Nsj-pf-KQZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +60,7 @@
                         <outlet property="RecordButton" destination="VwA-yv-Tiz" id="dFB-84-uqx"/>
                         <outlet property="RecordMsgLabel" destination="jI6-Xg-DkS" id="I6E-q6-B7x"/>
                         <outlet property="StopRecording" destination="neI-fR-too" id="z5u-mV-qS6"/>
+                        <segue destination="ToD-CQ-02c" kind="show" identifier="stopRecording" id="6yD-j1-vuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
