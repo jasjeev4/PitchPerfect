@@ -85,14 +85,44 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="FAG-Vu-C8c">
             <objects>
-                <viewController id="ToD-CQ-02c" sceneMemberID="viewController">
+                <viewController id="ToD-CQ-02c" customClass="PlaySoundsViewController" customModule="PitchPerfecred" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yXc-J5-kYW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mrl-FV-Aih">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-ed-tTE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etV-YU-Tws" userLabel="SnailButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="774"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <state key="normal" image="Slow">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="disabled" title="SnailButton"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsA-v7-MVi" userLabel="RabbitButton">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="774"/>
+                                                <state key="normal" title="Button" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mrl-FV-Aih" firstAttribute="leading" secondItem="XXL-Tn-wXL" secondAttribute="leading" id="Vbh-9j-bmI"/>
+                            <constraint firstItem="mrl-FV-Aih" firstAttribute="top" secondItem="XXL-Tn-wXL" secondAttribute="top" id="WSE-Hh-5av"/>
+                            <constraint firstItem="XXL-Tn-wXL" firstAttribute="bottom" secondItem="mrl-FV-Aih" secondAttribute="bottom" id="Z3W-8Y-pRT"/>
+                            <constraint firstItem="XXL-Tn-wXL" firstAttribute="trailing" secondItem="mrl-FV-Aih" secondAttribute="trailing" id="uA3-Js-jRo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XXL-Tn-wXL"/>
                     </view>
                     <navigationItem key="navigationItem" id="OSJ-6i-f7b"/>
@@ -103,7 +133,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="90" height="90"/>
         <image name="Record" width="155" height="155"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
     </resources>
 </document>

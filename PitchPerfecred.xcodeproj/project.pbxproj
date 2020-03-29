@@ -10,11 +10,12 @@
 		C8AACCCC243091C700414BD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AACCCB243091C700414BD5 /* AppDelegate.swift */; };
 		C8AACCCE243091C700414BD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AACCCD243091C700414BD5 /* SceneDelegate.swift */; };
 		C8AACCD0243091C700414BD5 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AACCCF243091C700414BD5 /* RecordSoundsViewController.swift */; };
-		C8AACCD3243091C700414BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AACCD1243091C700414BD5 /* Main.storyboard */; };
+		C8AACCD3243091C700414BD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AACCD1243091C700414BD5 /* Main.storyboard */; settings = {ASSET_TAGS = (" ", ); }; };
 		C8AACCD5243091D100414BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AACCD4243091D100414BD5 /* Assets.xcassets */; };
 		C8AACCD8243091D100414BD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AACCD6243091D100414BD5 /* LaunchScreen.storyboard */; };
 		C8AACCE3243091D200414BD5 /* PitchPerfecredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AACCE2243091D200414BD5 /* PitchPerfecredTests.swift */; };
 		C8AACCEE243091D200414BD5 /* PitchPerfecredUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AACCED243091D200414BD5 /* PitchPerfecredUITests.swift */; };
+		C8F3FF5B2430E473004DDD09 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3FF5A2430E473004DDD09 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C8AACCE9243091D200414BD5 /* PitchPerfecredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitchPerfecredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AACCED243091D200414BD5 /* PitchPerfecredUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfecredUITests.swift; sourceTree = "<group>"; };
 		C8AACCEF243091D200414BD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F3FF5A2430E473004DDD09 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C8AACCD4243091D100414BD5 /* Assets.xcassets */,
 				C8AACCD6243091D100414BD5 /* LaunchScreen.storyboard */,
 				C8AACCD9243091D100414BD5 /* Info.plist */,
+				C8F3FF5A2430E473004DDD09 /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfecred;
 			sourceTree = "<group>";
@@ -190,6 +193,9 @@
 		C8AACCC0243091C700414BD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					" ",
+				);
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Lorgarithmic Science";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8AACCD0243091C700414BD5 /* RecordSoundsViewController.swift in Sources */,
+				C8F3FF5B2430E473004DDD09 /* PlaySoundsViewController.swift in Sources */,
 				C8AACCCC243091C700414BD5 /* AppDelegate.swift in Sources */,
 				C8AACCCE243091C700414BD5 /* SceneDelegate.swift in Sources */,
 			);
