@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         RecordButton.isEnabled = true
-        StopRecording.isEnable  d = false
+        StopRecording.isEnabled = false
         // Do any additional setup after loading the view.
     }
 
