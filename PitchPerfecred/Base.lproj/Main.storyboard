@@ -25,6 +25,9 @@
                                 <rect key="frame" x="102.5" y="187" width="209" height="155"/>
                                 <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Button" image="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mK5-dg-yVl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neI-fR-too">
                                 <rect key="frame" x="173" y="531" width="69" height="66"/>
@@ -35,6 +38,9 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="155" id="zvZ-Of-mLw"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Stop"/>
+                                <connections>
+                                    <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQO-96-Kox"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -49,6 +55,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="RecordButton" destination="VwA-yv-Tiz" id="dFB-84-uqx"/>
+                        <outlet property="RecordMsgLabel" destination="jI6-Xg-DkS" id="I6E-q6-B7x"/>
+                        <outlet property="StopRecording" destination="neI-fR-too" id="z5u-mV-qS6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
